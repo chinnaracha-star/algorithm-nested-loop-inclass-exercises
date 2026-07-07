@@ -7,7 +7,21 @@
 */
 
 // Start coding here
+function showStudentsData(studentInfo) {
+  let data = "";
+  for (let student of studentInfo) {
+    data += `name: ${student.name}\n`;
+    data += `age: ${student.age}\n`;
+    data += `classNumber: ${student.classNumber}\n`;
+    data += `favoriteSubject: ${student.favoriteSubject}\n`;
+    data += "-------------------\n";
+  }
+  return data;
+}
+//--------------------------------------------------------------------------------------------------------------
 
+
+//--------------------------------------------------------------------------------------------------------------
 const studentsInfo = [
   { name: "Alice", age: 14, classNumber: 8, favoriteSubject: "Math" },
   { name: "Charlie", age: 15, classNumber: 9, favoriteSubject: "History" },

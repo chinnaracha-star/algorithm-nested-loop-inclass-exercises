@@ -7,6 +7,15 @@
 */
 
 // Start coding here
+function sumAllValues(matrix) {
+  let sum = 0;
+  for (let i of matrix) {
+    for (let j of i) {
+      sum += j;
+    }
+  }
+  return sum;
+}
 
 const matrix = [
   [11, 25, 18],

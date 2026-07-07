@@ -7,6 +7,18 @@
 */
 
 // Start coding here
+function multiplyByTwo(matrix) {
+  let newArray = [];
+  for (let i = 0; i < matrix.length; i++) {
+    console.log(matrix[i]);
+    for (let j = 0; j < matrix[i].length; j++) {
+      console.log(matrix[j]);
+      newArray.push(matrix[i][j] * 2);
+      console.log(matrix[i][j]);
+    }
+  }
+  return newArray;
+}
 
 const matrix = [
   [11, 22],
@@ -14,4 +26,5 @@ const matrix = [
   [55, 66],
 ];
 
-console.log(multiplyByTwo(matrix)); // [ 22, 44, 66, 88, 110, 132 ]
+console.log(multiplyByTwo(matrix));
+// [ 22, 44, 66, 88, 110, 132 ]
